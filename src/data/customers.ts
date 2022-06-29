@@ -1,72 +1,42 @@
 export const dataCustomers =  [
     {
       name: 'Paul',
-      country: {
-        name: 'France'
-      },
-      company: 'WIpReno',
-      representative: {
-        name: 'coucou'
-      }
     },
     {
-        name: 'Paul',
-        country: {
-          name: 'France'
-        },
-        company: 'WIpReno',
-        representative: {
-          name: 'coucou'
-        }
+        name: 'Claude',
       },
       {
-        name: 'Paul',
-        country: {
-          name: 'France'
-        },
-        company: 'WIpReno',
-        representative: {
-          name: 'coucou'
-        }
+        name: 'Louise',
       },
       {
-        name: 'Paul',
-        country: {
-          name: 'France'
-        },
-        company: 'WIpReno',
-        representative: {
-          name: 'coucou'
-        }
+        name: 'Marie',
       },
       {
-        name: 'Paul',
-        country: {
-          name: 'France'
-        },
-        company: 'WIpReno',
-        representative: {
-          name: 'coucou'
-        }
+        name: 'Jean',
       },
       {
-        name: 'Paul',
-        country: {
-          name: 'France'
-        },
-        company: 'WIpReno',
-        representative: {
-          name: 'coucou'
-        }
+        name: 'Sophie',
       },
       {
-        name: 'Paul',
-        country: {
-          name: 'France'
-        },
-        company: 'WIpReno',
-        representative: {
-          name: 'coucou'
-        }
+        name: 'Paco',
       },
+      {
+        name: 'Rabane',
+      },
+      {
+        name: 'Alain',
+      },
+      {
+        name: 'Pierre',
+      },
+      {
+        name: 'Lea',
+      },
+      {
+        name: 'Emma',
+      },
+      {
+        name: 'Pierrick',
+      },
+
   ]

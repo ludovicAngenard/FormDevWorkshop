@@ -10,13 +10,18 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ModalScrollComponent } from './modal-scroll/modal-scroll.component';
 import {TableModule} from 'primeng/table';
 import { UnderlineTitleComponent } from './underline-title/underline-title.component';
+import { SignaturePadComponent } from './signature-pad/signature-pad.component';
+import { AngularSignaturePadModule } from '@almothafar/angular-signature-pad';
+import {SelectButtonModule} from 'primeng/selectbutton';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModalPlanningComponent,
     ModalScrollComponent,
-    UnderlineTitleComponent
+    UnderlineTitleComponent,
+    SignaturePadComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,10 @@ import { UnderlineTitleComponent } from './underline-title/underline-title.compo
     ButtonModule,
     DialogModule,
     BrowserAnimationsModule,
-    TableModule
+    TableModule,
+    AngularSignaturePadModule,
+    SelectButtonModule,
+    FormsModule
   ],
   exports:  [],
   providers: [],
