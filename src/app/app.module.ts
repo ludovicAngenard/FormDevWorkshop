@@ -14,6 +14,10 @@ import { SelectButtonModule } from 'primeng/selectbutton';
 import { FormsModule } from '@angular/forms';
 
 import { NgModule } from '@angular/core';
+import { ModuleDetailsComponent } from './module-details/module-details.component';
+
+import { CardModule } from 'primeng/card';
+import {DividerModule} from 'primeng/divider';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,8 @@ import { NgModule } from '@angular/core';
     ModalPlanningComponent,
     ModalScrollComponent,
     UnderlineTitleComponent,
-    SignaturePadComponent
+    SignaturePadComponent,
+    ModuleDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,9 @@ import { NgModule } from '@angular/core';
     TableModule,
     AngularSignaturePadModule,
     SelectButtonModule,
-    FormsModule
+    FormsModule,
+    DividerModule,
+    CardModule,
   ],
   exports:  [],
   providers: [],
