@@ -18,12 +18,12 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
-  ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA,
+    BrowserAnimationsModule,
     DividerModule,
     CardModule
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]
