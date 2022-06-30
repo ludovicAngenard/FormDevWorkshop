@@ -1,0 +1,25 @@
+<div *ngIf="qrcode" class="grid p-fluid">
+    <div class="col-12 md:col-4 md:col-offset-4">
+        <div class="p-inputgroup">
+            <input type="text" pInputText placeholder="Nom">         
+        </div>
+    </div>
+    
+    <div class="col-12 md:col-4 md:col-offset-4">
+        <div class="p-inputgroup">
+            <input type="text" pInputText placeholder="Prénom">   
+        </div>
+    </div>
+</div>
+
+<div class="button-placement">
+    <button pButton type="button" label="Validé"></button>
+</div>
+
+<style>
+.button-placement {
+    display: flex;
+    justify-content: end;
+
+}
+</style>
