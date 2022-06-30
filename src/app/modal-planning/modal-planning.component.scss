@@ -1,0 +1,49 @@
+
+
+#modale-planning .container {
+    display: flex;
+    justify-content: space-around;
+
+    .signature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px
+    }
+}
+#modale-planning .container-button {
+    margin-top:40px;
+    display: flex;
+    justify-content: space-evenly;
+
+    .red{
+        background-color: red;
+    }
+}
+
+
+:host ::ng-deep .p-selectbutton .p-button {
+    background-color: white !important;
+    color: black;
+    &:hover {
+        color: black !important
+    }
+
+}
+
+
+:host ::ng-deep  .p-selectbutton {
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    &:hover {
+        color: black !important
+    }
+
+    .p-button.p-highlight {
+        font-weight: bold;
+        background-color: lightgray !important;
+    }
+}
+
