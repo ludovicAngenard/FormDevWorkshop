@@ -6,6 +6,7 @@ import { PlanningComponent } from './planning/planning.component';
 import { ModuleDetailsComponent } from './module-details/module-details.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import { ModuleComponent } from './module/module.component';
+import { ModalPlanningComponent } from './modal-planning/modal-planning.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'connexion', pathMatch: 'full' },
@@ -15,6 +16,8 @@ const routes: Routes = [
   { path: 'modules', component: ModuleListComponent},
   { path: 'module', component: ModuleComponent},
   { path: 'modules/:id', component: ModuleDetailsComponent},
+  { path: 'popup', component: ModalPlanningComponent},
+
 ]
 
 @NgModule({
