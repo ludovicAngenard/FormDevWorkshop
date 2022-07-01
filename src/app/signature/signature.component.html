@@ -1,4 +1,4 @@
-<div *ngIf="qrcode" class="grid p-fluid">
+<div *ngIf="qrcode" class="grid p-fluid mt-8">
     <div class="col-12 md:col-4 md:col-offset-4">
         <div class="p-inputgroup">
             <input type="text" pInputText placeholder="Nom">         
@@ -11,12 +11,19 @@
         </div>
     </div>
 </div>
-
+<div class="pad-signature">
+    <signature-pad style="background-color: grey;" [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
+</div>
 <div class="button-placement">
     <button pButton type="button" label="Validé"></button>
 </div>
 
 <style>
+.pad-signature {
+    display: flex;
+    justify-content: center;
+}
+
 .button-placement {
     display: flex;
     justify-content: end;
