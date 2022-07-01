@@ -18,6 +18,7 @@ import { ModuleDetailsComponent } from './module-details/module-details.componen
 
 import { CardModule } from 'primeng/card';
 import {DividerModule} from 'primeng/divider';
+import { ModuleListComponent } from './module-list/module-list.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {DividerModule} from 'primeng/divider';
     UnderlineTitleComponent,
     SignaturePadComponent,
     ModuleDetailsComponent,
+    ModuleListComponent,
   ],
   imports: [
     BrowserModule,

@@ -4,13 +4,15 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { SignatureComponent } from './signature/signature.component';
 import { PlanningComponent } from './planning/planning.component';
 import { ModuleDetailsComponent } from './module-details/module-details.component';
+import { ModuleListComponent } from './module-list/module-list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'connexion', pathMatch: 'full' },
   { path: 'connexion', component: ConnexionComponent },
   { path: 'signature', component: SignatureComponent },
   { path: 'planning', component: PlanningComponent },
-  { path: 'details', component: ModuleDetailsComponent },
+  { path: 'modules', component: ModuleListComponent},
+  { path: 'modules/:id', component: ModuleDetailsComponent},
 ]
 
 @NgModule({

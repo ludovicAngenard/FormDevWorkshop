@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { dataCustomers } from 'src/data/customers';
+import { dataStudents } from 'src/data/students';
 
 
 @Component({
@@ -8,17 +8,27 @@ import { dataCustomers } from 'src/data/customers';
   styleUrls: ['./modal-scroll.component.scss']
 })
 export class ModalScrollComponent implements OnInit {
-  customers: any[] = [];
-
-  title: string = "Participants"
+  students: any[] = [];
+  title: string = "Participants";
 
     constructor() { }
 
     ngOnInit(): void {
 
-      this.customers = dataCustomers
+      this.students = dataStudents
 
     }
-  
+    findStudentsColor(student:any): string {
+      let color = '';
+      if (student.sign_status == 'await'){
+        color = 'text-gray-600';
+      } else if (student.sign_status == 'missing'){
+        color = 'text-pink-600';
+      } else if (student.sign_status == 'valid'){
+        color = 'text-green-600';
+      }
+      return color
+    }
+
 
 }

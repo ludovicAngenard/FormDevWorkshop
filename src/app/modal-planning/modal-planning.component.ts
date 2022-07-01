@@ -20,13 +20,13 @@ export class ModalPlanningComponent implements OnInit {
   value2!: number;
 
   value3: any;
-  
+
   balanceFrozen: boolean = false;
 
   rowGroupMetadata: any;
 
 
-  constructor(private primeNGConfig: PrimeNGConfig) { 
+  constructor(private primeNGConfig: PrimeNGConfig) {
     this.stateOptions = [
       { label: 'Off', value: 'off' },
       { label: 'On', value: 'on' },

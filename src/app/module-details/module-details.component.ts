@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { dataModules } from 'src/data/modules';
 
 @Component({
   selector: 'app-module-details',
@@ -6,27 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./module-details.component.scss']
 })
 export class ModuleDetailsComponent implements OnInit {
-  title = 'Workshop - DEV';
-  place = '1 rue Pierre Adolphe Bobierre - Salle 102';
-  start_date = () : string => {
-    let currentDate = new Date();
-    let cDay = currentDate.getDate() -1;
-    let cMonth = currentDate.getMonth() + 1;
-    let cYear = currentDate.getFullYear();
-    return `${cDay}/${cMonth}/${cYear}`;
-  };
-  end_date = () : string => {
-    let currentDate = new Date();
-    let cDay = currentDate.getDate();
-    let cMonth = currentDate.getMonth() + 1;
-    let cYear = currentDate.getFullYear();
-    return `${cDay}/${cMonth}/${cYear}`;
-  };
-  description = 'Ceci n\'est pas une description';
-  last_name = 'Le Moine';
-  first_name = 'Christian';
-  constructor() { }
+  id: number = 0;
+  students = dataModules;
+
+  findModuleById = () : any => {
+    let result = {};
+    dataModules.forEach(module => {
+      if (module.id == this.id){
+        result = module;
+        console.log("TROUVE")
+      }
+    });
+    return result;
+  }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.id = parseInt(this.router.url.split('/')[2]);
+    console.log(this.id)
+    console.log(this.findModuleById())
   }
 }

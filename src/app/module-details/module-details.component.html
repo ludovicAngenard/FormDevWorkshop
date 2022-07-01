@@ -1,32 +1,30 @@
-
-<div style="width:100%;display:flex;justify-content:center;align-items:center;height:100%">
-    <p-card  style="width: 60%; border-radius: 25px; padding: 20px; margin-right: 10px; height: 80%; box-shadow: 5px 5px 30px lightgray;">
+<div class="grid p-fluid flex-1 flex align-items-center justify-content-center h-full m-0">
+    <p-card  [style]="{'height':'35rem'}" class="col-12 md:col-8 p-5 border-round border-white-alpha-90" >
         <div>
-            <h2>Cours</h2>
-            <p>{{title}}</p>
+            <app-underline-title title="Cours"></app-underline-title>
+            <p>{{findModuleById().subject}}</p>
         </div>
         <div>
-            <h2>Lieu</h2>
-            <p>{{place}}</p>
+            <app-underline-title title="Lieu"></app-underline-title>
+            <p>{{findModuleById().place}}</p>
         </div>
         <div style="display:flex; justify-content:space-between;">
             <div>
-                <h2 >Date de début</h2>
-                <p>{{start_date()}}</p>
+                <app-underline-title title="Date de début"></app-underline-title>
+                <p>{{findModuleById().start_date}}</p>
             </div>
             <div>
-                <h2>Date de fin</h2>
-                <p>{{end_date()}}</p>
+                <app-underline-title title="Date de fin"></app-underline-title>
+                <p>{{findModuleById().end_date}}</p>
             </div>
             <div></div>
         </div>
         <div>
-            <h2>Descriptif</h2>
-            <p>{{description}}</p>
+            <app-underline-title title="Description"></app-underline-title>
+            <p>{{findModuleById().description}}</p>
         </div>
     </p-card>
-    <p-card style="width: 30%; box-shadow: 5px 5px 30px lightgray; border-radius: 25px; padding: 20px;margin-left: 10px; height: 80%; text-align: center;">
-        <h2>Pariticpants</h2>
-        <p-divider></p-divider>
+    <p-card [style]="{'height':'35rem'}" class="col-12 md:col-4 p-5 text-center border-round border-white-alpha-90 md:vertical-align-middle">
+        <app-modal-scroll></app-modal-scroll>
     </p-card>
 </div>
