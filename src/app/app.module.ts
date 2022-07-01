@@ -4,7 +4,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { FullCalendarModule } from '@fullcalendar/angular';
+import dayGridPlugin from '@fullcalendar/daygrid';
+
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
+FullCalendarModule.registerPlugins([
+  dayGridPlugin
+]);
 
 @NgModule({
   declarations: [
@@ -13,7 +20,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   imports: [ 
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FullCalendarModule
   ],
   schemas: [  
     CUSTOM_ELEMENTS_SCHEMA
