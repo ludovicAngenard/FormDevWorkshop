@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { CalendarOptions } from "@fullcalendar/angular";
 
 @Component({
@@ -6,6 +6,9 @@ import { CalendarOptions } from "@fullcalendar/angular";
     selector: "app-planning",
     templateUrl: "./planning.component.html",
     styleUrls: ["./planning.component.scss"],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA 
+    ]
 })
 
 export class PlanningComponent {
