@@ -8,12 +8,12 @@
             <app-underline-title title="Lieu"></app-underline-title>
             <p>{{findModuleById().place}}</p>
         </div>
-        <div style="display:flex; justify-content:space-between;">
-            <div>
+        <div class="grid p-fluid">
+            <div class="col-12 md:col-6">
                 <app-underline-title title="Date de début"></app-underline-title>
                 <p>{{findModuleById().start_date}}</p>
             </div>
-            <div>
+            <div class="col-12 md:col-6">
                 <app-underline-title title="Date de fin"></app-underline-title>
                 <p>{{findModuleById().end_date}}</p>
             </div>
