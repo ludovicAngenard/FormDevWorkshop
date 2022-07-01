@@ -18,8 +18,6 @@ import { ModuleDetailsComponent } from './module-details/module-details.componen
 
 import { CardModule } from 'primeng/card';
 import {DividerModule} from 'primeng/divider';
-import { ModuleListComponent } from './module-list/module-list.component';
-import { ModuleComponent } from './module/module.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +27,6 @@ import { ModuleComponent } from './module/module.component';
     UnderlineTitleComponent,
     SignaturePadComponent,
     ModuleDetailsComponent,
-    ModuleListComponent,
   ],
   imports: [
     BrowserModule,

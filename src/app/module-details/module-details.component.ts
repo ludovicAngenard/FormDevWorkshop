@@ -16,7 +16,6 @@ export class ModuleDetailsComponent implements OnInit {
     dataModules.forEach(module => {
       if (module.id == this.id){
         result = module;
-        console.log("TROUVE")
       }
     });
     return result;
