@@ -1,8 +1,6 @@
 export const dataStudents =  [
   { id: 0, first_name: 'Ludovic', last_name: 'Angenard', mail: 'ludovic.angenard@campus.academy', sign_status: 'valid'},
   { id: 1, first_name: 'Rémy', last_name: 'Thibaudeau', mail: 'remy.thibaudeau@campus.academy', sign_status: 'valid'},
-  { id: 12, first_name: 'Jérémy', last_name: 'Barré', mail: 'jeremy.barre@campus.academy', sign_status: 'missing'},
-  { id: 13, first_name: 'Mahel', last_name: 'berbudeau-fleuridas', mail: 'mahel.berbudeau-fleuridas@campus.academy', sign_status: 'missing'},
   { id: 2, first_name: 'Arnaud', last_name: 'Blessing', mail: 'arnaud.blessing@campus.academy', sign_status: 'await'},
   { id: 3, first_name: 'Adrien', last_name: 'Meunier', mail: 'adrien.meunier@campus.academy', sign_status: 'valid'},
   { id: 4, first_name: 'Maxime', last_name: 'Nicolas', mail: 'maxime.nicolas@campus.academy', sign_status: 'await'},
@@ -13,4 +11,5 @@ export const dataStudents =  [
   { id: 9, first_name: 'Adrien', last_name: 'Meunier', mail: 'adrien.meunier@campus.academy', sign_status: 'valid'},
   { id: 10, first_name: 'Maxime', last_name: 'Nicolas', mail: 'maxime.nicolas@campus.academy', sign_status: 'await'},
   { id: 11, first_name: 'Lucas', last_name: 'Maillard', mail: 'lucas.maillard@campus.academy', sign_status: 'await'},
-]
+{ id: 12, first_name: 'Jérémy', last_name: 'Barré', mail: 'jeremy.barre@campus.academy', sign_status: 'missing'},
+  { id: 13, first_name: 'Mahel', last_name: 'berbudeau-fleuridas', mail: 'mahel.berbudeau-fleuridas@campus.academy', sign_status: 'missing'}]

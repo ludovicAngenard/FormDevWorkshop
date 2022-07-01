@@ -14,8 +14,6 @@ const routes: Routes = [
   { path: 'planning', component: PlanningComponent },
   { path: 'modules', component: ModuleComponent},
   { path: 'modules/:id', component: ModuleDetailsComponent},
-  { path: 'popup', component: ModalPlanningComponent},
-
 ]
 
 @NgModule({

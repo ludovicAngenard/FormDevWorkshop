@@ -24,7 +24,5 @@ export class ModuleDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = parseInt(this.router.url.split('/')[2]);
-    console.log(this.id)
-    console.log(this.findModuleById())
   }
 }

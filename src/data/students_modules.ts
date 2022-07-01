@@ -1,4 +1,4 @@
-export const dataStudents =  [
+export const dataStudentsModules =  [
     {student: 0, module: 2, sign_status: 'valid'},
     {student: 1, module: 2, sign_status: 'missing'},
     {student: 2, module: 2, sign_status: 'valid'},
@@ -11,7 +11,7 @@ export const dataStudents =  [
     {student: 9, module: 2, sign_status: 'valid'},
     {student: 10, module: 2, sign_status: 'missing'},
     {student: 11, module: 2, sign_status: 'valid'},
-    {student: 0, module: 1, sign_status: 'valid'},
+    {student: 0, module: 1, sign_status: 'missing'},
     {student: 1, module: 1, sign_status: 'missing'},
     {student: 2, module: 1, sign_status: 'valid'},
     {student: 3, module: 1, sign_status: 'missing'},
