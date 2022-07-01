@@ -35,7 +35,6 @@ export class ConnexionComponent {
 
   redirect() {
     this.router.navigate(['/'])
-
   }
 
 }

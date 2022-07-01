@@ -5,6 +5,7 @@ import { SignatureComponent } from './signature/signature.component';
 import { PlanningComponent } from './planning/planning.component';
 import { ModuleDetailsComponent } from './module-details/module-details.component';
 import { ModuleListComponent } from './module-list/module-list.component';
+import { ModuleComponent } from './module/module.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'connexion', pathMatch: 'full' },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'signature', component: SignatureComponent },
   { path: 'planning', component: PlanningComponent },
   { path: 'modules', component: ModuleListComponent},
+  { path: 'module', component: ModuleComponent},
   { path: 'modules/:id', component: ModuleDetailsComponent},
 ]
 

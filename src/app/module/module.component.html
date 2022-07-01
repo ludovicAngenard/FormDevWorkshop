@@ -1,0 +1,45 @@
+<div>
+   <div>
+        <h1 class="title">Mes modules</h1>
+   </div>
+   <div>
+        <h2 class="title">En cours</h2>
+    
+        <div class="grid p-fluid mt-2" (click)="redirect(students[0].id)">
+            <div class="col-12">
+                <p-fieldset legend="Workshop - DEV : 28/06/2022 - 29/06/2022">
+                    {{ students[0].description }}
+                </p-fieldset>
+            </div>
+        </div>
+   </div>
+    <div>
+        <h2 class="title">A venir</h2>
+        
+        <div class="grid p-fluid mt-2" (click)="redirect(students[1].id)">
+            <div class="col-12">
+                <p-fieldset legend="Workshop - ASSO : 18/06/2022 - 19/06/2022">
+                    {{ students[1].description }}
+                </p-fieldset>
+            </div>
+        </div>
+   </div>
+    <div>
+        <h2 class="title">En attente</h2>
+        
+        <div class="grid p-fluid mt-2" (click)="redirect(students[2].id)">
+            <div class="col-12">
+                <p-fieldset legend="Workshop : 12/06/2022 - 12/06/2022">
+                    {{ students[2].description }}
+                </p-fieldset>
+            </div>
+        </div>
+   </div>
+</div>
+
+<style>
+.title {
+    text-align: center;
+    text-decoration: underline;
+}
+</style>
