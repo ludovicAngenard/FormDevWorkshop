@@ -26,7 +26,7 @@ export class ModalScrollComponent implements OnInit {
     this.id = parseInt(this.router.url.split('/')[2]);
   }
 
-  findModuleById = () : any => {
+  findModuleByCurrentId = () : any => {
     let result = {};
     this.modules.forEach(module => {
       if (module.id == this.id){
@@ -35,34 +35,35 @@ export class ModalScrollComponent implements OnInit {
     });
     return result;
   }
-  findStudentsByModule = () =>{
-    let studentsModule = this.studentsModules.filter(studentModule => studentModule.module == this.findModuleById().id);
-    return studentsModule
+  findStudentsByCurrentModule = () =>{
+    let result: any[] = [];
+    let studentsModule = this.studentsModules.filter(studentModule => studentModule.module == this.findModuleByCurrentId().id);
+    studentsModule.forEach( studentModule => {
+      this.students.forEach( student => {
+        if (studentModule.student == student.id){
+          result.push(student);
+        }
+      })
+    })
+    return result
   }
 
-  findColorByStudent = (student:any) : string => {
-    let studentModule = this.findStudentsByModule().filter( studentModule => studentModule.student == student.id)
+  findColorByStudentAndByCurrentModule = (student:any) : string => {
+    let studentsModule = this.studentsModules.filter(studentModule => studentModule.module == this.findModuleByCurrentId().id);
+    let sign_status : any= ''
+    studentsModule.forEach( studentModule => {
+      if (studentModule.student == student.id){
+        sign_status = studentModule.sign_status
+      }
+    });
     let color: string = '';
-    console.log(studentModule)
-    if (studentModule[0] && studentModule[0].sign_status == 'await'){
+    if (sign_status == 'await'){
       color = 'text-gray-600';
-    } else if (studentModule[0] && studentModule[0].sign_status == 'missing'){
+    } else if (sign_status == 'missing'){
       color = 'text-pink-600';
-    } else if (studentModule[0] && studentModule[0].sign_status == 'valid'){
+    } else if (sign_status == 'valid'){
       color = 'text-green-600';
     }
     return color;
-  }
-
-  findStudentsColor(student:any): string {
-    let color = '';
-    if (student.sign_status == 'await'){
-      color = 'text-gray-600';
-    } else if (student.sign_status == 'missing'){
-      color = 'text-pink-600';
-    } else if (student.sign_status == 'valid'){
-      color = 'text-green-600';
-    }
-    return color
   }
 }

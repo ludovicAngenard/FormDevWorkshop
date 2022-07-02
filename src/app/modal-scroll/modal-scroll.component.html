@@ -1,5 +1,5 @@
 <div class="card">
-    <p-table [value]="students" [scrollable]="true" scrollHeight="400px">
+    <p-table [value]="findStudentsByCurrentModule()" [scrollable]="true" scrollHeight="400px">
         <ng-template pTemplate="header">
             <tr>
                 <th style="min-width:200px" class="m-auto"><p class="m-auto">{{title}}</p></th>
@@ -7,7 +7,7 @@
         </ng-template>
         <ng-template pTemplate="body" let-student>
             <tr >
-                <td style="min-width:200px" ><p class="m-auto {{findColorByStudent(student)}}">{{student.first_name}} {{student.last_name}}</p></td>
+                <td style="min-width:200px" ><p class="m-auto {{findColorByStudentAndByCurrentModule(student)}}">{{student.first_name}} {{student.last_name}}</p></td>
             </tr>
         </ng-template>
     </p-table>
